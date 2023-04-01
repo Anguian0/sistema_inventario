@@ -1,0 +1,37 @@
+/* CSS Global */
+
+
+/* Configuración de Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Pone el fondo gris */
+@layer base {
+    body {
+        @apply bg-gray-100;
+    }
+}
+
+
+/* Para quitar la barra de scroll */
+.scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+/* Para hacer efecto cover en las imagenes */
+.cover {
+  object-fit: cover;
+}
+
+
+/* Para cambiar la tipografía de las alertas de sweetalert2 */
+#swal {
+  font-family: monospace;
+}
